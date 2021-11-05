@@ -1,13 +1,21 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import { Btn } from './styles';
 
-function Button({ children, ...rest }) {
+const Button = ({ label, ...rest }) => {
   return (
     <Btn {...rest}>
-      {children}
+      {label}
     </Btn>
   )
+}
+
+Button.propTypes = {
+  label: PropTypes.string.isRequired,
+  primary: PropTypes.bool,
+  success: PropTypes.bool,
+  danger: PropTypes.bool
 }
 
 export default Button

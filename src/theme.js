@@ -6,4 +6,6 @@ export const THEME_COLORS = {
   DANGER: '#C11F3A',
   WARNING: '#F49B00',
   INFO: '#007984',
+  INPUT_BG: 'rgba(157, 71, 71, 0.2)',
+  PAGE_BG: '#FFF9F0'
 }

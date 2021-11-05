@@ -2,11 +2,31 @@ import React from 'react'
 import Button from './Button'
 
 export default {
-  title: 'Button',
+  title: 'form/Button',
   component: Button
 }
 
-export const Secondary = () => <Button>Secondary</Button>
-export const Primary = () => <Button primary>Primary</Button>
-export const Success = () => <Button success>Success</Button>
-export const Danger = () => <Button danger>Danger</Button>
+const Template = args => <Button {...args} />
+
+export const Primary = Template.bind({})
+Primary.args = {
+  primary: true,
+  label: 'Primary'
+}
+
+export const Default = Template.bind({})
+Default.args = {
+  label: 'Default'
+}
+
+export const Success = Template.bind({})
+Success.args = {
+  success: true,
+  label: 'Success'
+}
+
+export const Danger = Template.bind({})
+Danger.args = {
+  danger: true,
+  label: 'Danger'
+}
