@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots form/Button Danger 1`] = `
+<button
+  className="sc-bdvvtL ddjGkg"
+>
+  Danger
+</button>
+`;
+
+exports[`Storyshots form/Button Default 1`] = `
+<button
+  className="sc-bdvvtL gmqLIx"
+>
+  Default
+</button>
+`;
+
+exports[`Storyshots form/Button Primary 1`] = `
+<button
+  className="sc-bdvvtL jzvfxu"
+>
+  Primary
+</button>
+`;
+
+exports[`Storyshots form/Button Success 1`] = `
+<button
+  className="sc-bdvvtL dXyDmU"
+>
+  Success
+</button>
+`;
+
+exports[`Storyshots form/InputBox Default 1`] = `
+<input
+  className="sc-gsDKAQ fPlcKN"
+  placeholder="yourname@example.com"
+  type="text"
+/>
+`;
+
+exports[`Storyshots form/InputBox Large 1`] = `
+<input
+  className="sc-gsDKAQ kJvjlD"
+  placeholder="yourname@example.com"
+  type="text"
+/>
+`;
+
+exports[`Storyshots form/InputBox Small 1`] = `
+<input
+  className="sc-gsDKAQ edFjrX"
+  placeholder="yourname@example.com"
+  type="text"
+/>
+`;
