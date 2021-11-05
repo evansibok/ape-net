@@ -1,0 +1,9 @@
+export const THEME_COLORS = {
+  PRIMARY: '#9D4747',
+  TEXT: '#0F0E0E',
+  WHITE: '#FFFFFF',
+  SUCCESS: '#1F9E38',
+  DANGER: '#C11F3A',
+  WARNING: '#F49B00',
+  INFO: '#007984',
+}
