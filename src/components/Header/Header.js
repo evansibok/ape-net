@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import Button from '../Button/Button'
 import { Container } from './styles'
 
-export const Header = ({ user, loading, loginUser, logOutUser }) => {
+export const Header = ({ loggedIn, loading, loginUser, logOutUser }) => {
   return (
     <Container>
       <div className='logo-brand'>
@@ -13,17 +13,17 @@ export const Header = ({ user, loading, loginUser, logOutUser }) => {
 
       <div className='header-cta'>
         {
-          user ? (
+          loggedIn ? (
             <Button
-              primary
-              label='Connect Wallet'
-              onClick={loginUser}
+              label='Disconnect Wallet'
+              onClick={logOutUser}
               loading={loading}
             />
           ) : (
             <Button
-              label='Disconnect Wallet'
-              onClick={logOutUser}
+              primary
+              label='Connect Wallet'
+              onClick={loginUser}
               loading={loading}
             />
           )
@@ -34,15 +34,17 @@ export const Header = ({ user, loading, loginUser, logOutUser }) => {
 }
 
 Header.propTypes = {
-  user: PropTypes.shape({}),
+  loading: PropTypes.bool.isRequired,
+  loggedIn: PropTypes.bool.isRequired,
   loginUser: PropTypes.func.isRequired,
   logOutUser: PropTypes.func.isRequired,
-  loading: PropTypes.bool.isRequired,
 }
 
 Header.defaultProps = {
-  user: null,
   loading: false,
+  loggedIn: false,
+  loginUser: undefined,
+  logOutUser: undefined,
 }
 
 export default Header

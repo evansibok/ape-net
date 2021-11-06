@@ -3,7 +3,7 @@ import React from 'react'
 import InputBox from './InputBox';
 
 export default {
-  title: 'InputBox',
+  title: 'Base/InputBox',
   component: InputBox,
 }
 

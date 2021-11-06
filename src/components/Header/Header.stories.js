@@ -3,7 +3,7 @@ import React from 'react'
 import Header from './Header'
 
 export default {
-  title: 'Header',
+  title: 'Navigation/Header',
   component: Header,
   argTypes: {
     loginUser: {
@@ -19,10 +19,10 @@ const Template = args => <Header {...args} />
 
 export const LoggedIn = Template.bind({})
 LoggedIn.args = {
-  user: {},
+  loggedIn: true,
 }
 
 export const LoggedOut = Template.bind({})
 LoggedOut.args = {
-  user: null,
+  loggedIn: false,
 }

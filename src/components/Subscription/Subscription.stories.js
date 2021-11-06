@@ -11,4 +11,13 @@ const Template = args => <Subscription {...args} />
 export const Unsubscribed = Template.bind({})
 Unsubscribed.args = {
   loading: false,
+  isSubscribed: false,
+  user: null,
+}
+
+export const Subscribed = Template.bind({})
+Subscribed.args = {
+  loading: false,
+  isSubscribed: true,
+  user: {}
 }
