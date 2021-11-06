@@ -8,7 +8,12 @@ export const Btn = styled.button`
   color: ${THEME_COLORS.PRIMARY};
   padding: 0.5em 1em;
   font-size: 1em;
-
+  font-family: 'Chela One', cursive;
+  
+  &:hover {
+    cursor: pointer;
+  }
+  
   ${props => props.primary && css`
     background: ${THEME_COLORS.PRIMARY};
     color: ${THEME_COLORS.WHITE}

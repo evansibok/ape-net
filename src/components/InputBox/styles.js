@@ -9,11 +9,13 @@ export const Input = styled.input`
   padding: 0.8em 1.5em;
   width: 300px;
   height: 1.5rem;
+  margin: 1em;
+  font-family: 'Balsamiq Sans', cursive;
 
   &::placeholder {
     font-style: italic;
     color: ${THEME_COLORS.TEXT};
-    font-weight: 400;
+    font-weight: 700;
   }
   
   ${props => props.small && css`
