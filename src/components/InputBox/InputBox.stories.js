@@ -3,8 +3,9 @@ import React from 'react'
 import InputBox from './InputBox';
 
 export default {
-  title: 'form/InputBox',
-  component: InputBox
+  title: 'InputBox',
+  component: InputBox,
+  argTypes: { handleChange: { action: 'changed' } }
 }
 
 const Template = args => <InputBox {...args} />
@@ -16,12 +17,12 @@ Default.args = {
 
 export const Small = Template.bind({})
 Small.args = {
+  ...Default.args,
   small: true,
-  placeholder: 'yourname@example.com'
 }
 
 export const Large = Template.bind({})
 Large.args = {
+  ...Default.args,
   large: true,
-  placeholder: 'yourname@example.com'
 }
