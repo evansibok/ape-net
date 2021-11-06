@@ -5,7 +5,6 @@ import InputBox from './InputBox';
 export default {
   title: 'InputBox',
   component: InputBox,
-  argTypes: { handleChange: { action: 'changed' } }
 }
 
 const Template = args => <InputBox {...args} />
