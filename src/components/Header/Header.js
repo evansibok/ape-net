@@ -6,7 +6,7 @@ import BrandLogo from '../../assets/apenet-logo.png'
 import Button from '../Button/Button'
 import { Container, Logo } from './styles'
 
-export const Header = ({ loggedIn, loading, loginUser, logOutUser }) => {
+export const Header = ({ loggedIn, connecting, logInUser, logOutUser }) => {
   return (
     <Container>
       <Logo className='logo-brand'>
@@ -19,14 +19,14 @@ export const Header = ({ loggedIn, loading, loginUser, logOutUser }) => {
             <Button
               label='Disconnect Wallet'
               onClick={logOutUser}
-              loading={loading}
+              connecting={connecting}
             />
           ) : (
             <Button
               primary
               label='Connect Wallet'
-              onClick={loginUser}
-              loading={loading}
+              onClick={logInUser}
+              connecting={connecting}
             />
           )
         }
@@ -36,16 +36,16 @@ export const Header = ({ loggedIn, loading, loginUser, logOutUser }) => {
 }
 
 Header.propTypes = {
-  loading: PropTypes.bool.isRequired,
+  connecting: PropTypes.bool.isRequired,
   loggedIn: PropTypes.bool.isRequired,
-  loginUser: PropTypes.func.isRequired,
-  logOutUser: PropTypes.func.isRequired,
+  logInUser: PropTypes.func,
+  logOutUser: PropTypes.func,
 }
 
 Header.defaultProps = {
-  loading: false,
+  connecting: false,
   loggedIn: false,
-  loginUser: undefined,
+  logInUser: undefined,
   logOutUser: undefined,
 }
 

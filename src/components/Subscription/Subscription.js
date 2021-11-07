@@ -7,7 +7,7 @@ import InputBox from '../InputBox/InputBox'
 import { Container, Form, Subbed } from './styles'
 
 
-export const Subscription = ({ user, isSubscribed, onSubscribe, onInputChange, loading }) => {
+export const Subscription = ({ user, isSubscribed, onSubscribe, onInputChange, subLoading }) => {
 
   return (
     <Container>
@@ -34,7 +34,7 @@ export const Subscription = ({ user, isSubscribed, onSubscribe, onInputChange, l
             <Button
               primary
               label='Send me Invite'
-              loading={loading}
+              connecting={subLoading}
               onClick={onSubscribe}
             />
           </Form>
@@ -47,7 +47,7 @@ export const Subscription = ({ user, isSubscribed, onSubscribe, onInputChange, l
 Subscription.propTypes = {
   user: PropTypes.shape({}),
   isSubscribed: PropTypes.bool.isRequired,
-  loading: PropTypes.bool.isRequired,
+  subLoading: PropTypes.bool.isRequired,
   onSubscribe: PropTypes.func.isRequired,
   onInputChange: PropTypes.func.isRequired,
 }
@@ -55,7 +55,7 @@ Subscription.propTypes = {
 Subscription.defaultProps = {
   user: null,
   isSubscribed: false,
-  loading: false,
+  subLoading: false,
   onSubscribe: undefined,
   onInputChange: undefined,
 }

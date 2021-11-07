@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Landing from '../Pages/Landing/Landing';
+import Landing from '../pages/Landing/Landing';
 
 
 const Routes = () => {

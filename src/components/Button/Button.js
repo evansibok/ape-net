@@ -3,12 +3,12 @@ import PropTypes from 'prop-types'
 
 import { Btn } from './styles';
 
-const Button = ({ loading, label, ...rest }) => {
+const Button = ({ connecting, label, ...rest }) => {
 
   return (
     <Btn {...rest}>
       {
-        loading ? 'Loading...' : label
+        connecting ? 'Loading...' : label
       }
     </Btn>
   )
@@ -19,7 +19,7 @@ Button.propTypes = {
   primary: PropTypes.bool,
   success: PropTypes.bool,
   danger: PropTypes.bool,
-  loading: PropTypes.bool.isRequired,
+  connecting: PropTypes.bool.isRequired,
   onClick: PropTypes.func.isRequired,
 }
 
@@ -27,7 +27,7 @@ Button.defaultProps = {
   primary: false,
   success: false,
   danger: false,
-  loading: false,
+  connecting: false,
   onClick: undefined,
 }
 
