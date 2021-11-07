@@ -1,5 +1,7 @@
 # ApeNet Project
 Your Guide to the ApeNet Metaverse (A mini Storybook template project)
+
+View Deployed Storybook here: [ApeNet Design System](https://6187d0ec016a71003aa23121-syutecmcwk.chromatic.com/)
 ## How to Run Locally
 
 ### Clone Repository
