@@ -9,65 +9,12 @@ import { Container, Banner } from './styles'
 
 export const Landing = ({ loggedIn, connecting, logInUser, logOutUser, subLoading, user, isSubscribed, onSubscribe, onInputChange,
 }) => {
-  // const [connecting, setConnecting] = useState(false);
-  // const [subLoading, setSubLoading] = useState(false);
-  // const [loggedIn, setLoggedIn] = useState(false);
-  // const [isSubscribed, setIsSubscribed] = useState(false);
-  // const [userForm, setUserForm] = useState({
-  //   first_name: '',
-  //   email: ''
-  // });
-
-  // const logIn = (evt) => {
-  //   setConnecting(true)
-
-  //   setLoggedIn(true)
-
-  //   setTimeout(() => {
-  //     setConnecting(false)
-  //   }, 3000)
-  // }
-
-  // const logOut = (evt) => {
-  //   setConnecting(true)
-
-  //   setLoggedIn(false)
-
-  //   setTimeout(() => {
-  //     setConnecting(false)
-  //   }, 3000)
-  // }
-
-  // const onSubscribe = () => {
-  //   if (userForm.first_name === '' || userForm.email === '') {
-  //     alert('Enter your first name and email to subscribe!')
-  //   } else {
-  //     setSubLoading(true)
-
-  //     setTimeout(() => {
-  //       setIsSubscribed(true)
-  //     }, 3000)
-
-  //     setTimeout(() => {
-  //       setSubLoading(false)
-  //     }, 3000)
-  //   }
-  // }
-
-  // const onInputChange = (evt) => {
-  //   const { name, value } = evt.target;
-
-  //   setUserForm({
-  //     ...userForm,
-  //     [name]: value
-  //   })
-  // }
 
   return (
     <Container>
       <Header
         loggedIn={loggedIn}
-        loading={connecting}
+        connecting={connecting}
         logInUser={logInUser}
         logOutUser={logOutUser}
       />
@@ -80,7 +27,7 @@ export const Landing = ({ loggedIn, connecting, logInUser, logOutUser, subLoadin
       </Banner>
 
       <Subscription
-        loading={subLoading}
+        subLoading={subLoading}
         user={user}
         isSubscribed={isSubscribed}
         onSubscribe={onSubscribe}
