@@ -7,7 +7,7 @@ export const Btn = styled.button`
   border: 2px solid ${THEME_COLORS.PRIMARY};
   color: ${THEME_COLORS.PRIMARY};
   padding: 0.5em 1em;
-  font-size: 1em;
+  font-size: 1rem;
   font-family: 'Chela One', cursive;
   
   &:hover {

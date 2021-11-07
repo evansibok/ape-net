@@ -1,15 +1,17 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import BrandLogo from '../../assets/apenet-logo.png'
+
 import Button from '../Button/Button'
-import { Container } from './styles'
+import { Container, Logo } from './styles'
 
 export const Header = ({ loggedIn, loading, loginUser, logOutUser }) => {
   return (
     <Container>
-      <div className='logo-brand'>
-        <h3>ApeNet Logo</h3>
-      </div>
+      <Logo className='logo-brand'>
+        <img src={BrandLogo} alt='apenet logo' />
+      </Logo>
 
       <div className='header-cta'>
         {

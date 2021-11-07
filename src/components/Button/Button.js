@@ -5,11 +5,11 @@ import { Btn } from './styles';
 
 const Button = ({ loading, label, ...rest }) => {
 
-  if (loading) return <p>loading...</p>
-
   return (
     <Btn {...rest}>
-      {label}
+      {
+        loading ? 'Loading...' : label
+      }
     </Btn>
   )
 }

@@ -6,4 +6,13 @@ export const Container = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1em 5em;
+`;
+
+export const Logo = styled.div`
+  width: 120px;
+
+  img {
+    width: 100%;
+  }
 `;

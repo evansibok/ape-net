@@ -1,14 +1,13 @@
 import React from 'react'
 
-// import SubscriptionForm from '../components/SubscriptionForm/SubscriptionForm';
+import Landing from '../Pages/Landing/Landing';
 
 
 const Routes = () => {
 
   return (
     <>
-      {/* <SubscriptionForm /> */}
-      <h3>Home</h3>
+      <Landing />
     </>
   );
 }

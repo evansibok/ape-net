@@ -14,7 +14,7 @@ export const Input = styled.input`
 
   &::placeholder {
     font-style: italic;
-    color: ${THEME_COLORS.TEXT};
+    color: ${THEME_COLORS.PRIMARY};
     font-weight: 700;
   }
   

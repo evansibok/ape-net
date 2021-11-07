@@ -19,5 +19,8 @@ export const Subscribed = Template.bind({})
 Subscribed.args = {
   loading: false,
   isSubscribed: true,
-  user: {}
+  user: {
+    first_name: 'James',
+    email: 'james.bond@hey.com'
+  }
 }
