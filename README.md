@@ -38,4 +38,9 @@ yarn start
 
 >> Run `yarn start` again. You should be good to go from here!
 
+### To Run Tests
+```
+yarn test
+```
+
 Have fun playing around with the component compositions. 😊 ✨
