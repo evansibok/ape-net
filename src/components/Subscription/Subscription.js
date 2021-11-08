@@ -56,8 +56,8 @@ Subscription.defaultProps = {
   user: null,
   isSubscribed: false,
   subLoading: false,
-  onSubscribe: undefined,
-  onInputChange: undefined,
+  onSubscribe: () => null,
+  onInputChange: () => null,
 }
 
 

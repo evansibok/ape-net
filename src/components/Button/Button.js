@@ -28,7 +28,7 @@ Button.defaultProps = {
   success: false,
   danger: false,
   connecting: false,
-  onClick: undefined,
+  onClick: () => null,
 }
 
 export default Button

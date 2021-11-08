@@ -1,57 +1,308 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots form/Button Danger 1`] = `
+exports[`Storyshots Base/Button Danger 1`] = `
 <button
-  className="sc-bdvvtL ddjGkg"
+  className="sc-bdvvtL NGlGL"
+  onClick={[Function]}
 >
   Danger
 </button>
 `;
 
-exports[`Storyshots form/Button Default 1`] = `
+exports[`Storyshots Base/Button Default 1`] = `
 <button
-  className="sc-bdvvtL gmqLIx"
+  className="sc-bdvvtL clAnXq"
+  onClick={[Function]}
 >
   Default
 </button>
 `;
 
-exports[`Storyshots form/Button Primary 1`] = `
+exports[`Storyshots Base/Button Primary 1`] = `
 <button
-  className="sc-bdvvtL jzvfxu"
+  className="sc-bdvvtL dWhLfx"
+  onClick={[Function]}
 >
   Primary
 </button>
 `;
 
-exports[`Storyshots form/Button Success 1`] = `
+exports[`Storyshots Base/Button Success 1`] = `
 <button
-  className="sc-bdvvtL dXyDmU"
+  className="sc-bdvvtL frcwmL"
+  onClick={[Function]}
 >
   Success
 </button>
 `;
 
-exports[`Storyshots form/InputBox Default 1`] = `
+exports[`Storyshots Base/InputBox Default 1`] = `
 <input
-  className="sc-gsDKAQ fPlcKN"
+  className="sc-hKwDye dYeXrn"
+  onChange={[Function]}
   placeholder="yourname@example.com"
   type="text"
 />
 `;
 
-exports[`Storyshots form/InputBox Large 1`] = `
+exports[`Storyshots Base/InputBox Large 1`] = `
 <input
-  className="sc-gsDKAQ kJvjlD"
+  className="sc-hKwDye zDZiF"
+  onChange={[Function]}
   placeholder="yourname@example.com"
   type="text"
 />
 `;
 
-exports[`Storyshots form/InputBox Small 1`] = `
+exports[`Storyshots Base/InputBox Small 1`] = `
 <input
-  className="sc-gsDKAQ edFjrX"
+  className="sc-hKwDye biVEOZ"
+  onChange={[Function]}
   placeholder="yourname@example.com"
   type="text"
 />
+`;
+
+exports[`Storyshots Form/Subscription Subscribed 1`] = `
+<div
+  className="sc-eCImPb khPsoi"
+>
+  <div
+    className="sc-gKclnd kobbnQ"
+  >
+    <h4>
+      Hello 
+      <span
+        className="user-name"
+      >
+        James
+        !
+      </span>
+    </h4>
+    <p>
+      Your invitation has been sent to 
+      <span
+        className="user-email"
+      >
+        james.bond@hey.com
+      </span>
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Form/Subscription Unsubscribed 1`] = `
+<div
+  className="sc-eCImPb khPsoi"
+>
+  <div
+    className="sc-jRQBWg ingaXa"
+  >
+    <input
+      className="sc-hKwDye dYeXrn"
+      name="first_name"
+      onChange={[Function]}
+      placeholder="your first name"
+      type="text"
+    />
+    <input
+      className="sc-hKwDye dYeXrn"
+      name="email"
+      onChange={[Function]}
+      placeholder="yourname@example.com"
+      type="text"
+    />
+    <button
+      className="sc-bdvvtL dWhLfx"
+      onClick={[Function]}
+    >
+      Send me Invite
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Navigation/Header Logged In 1`] = `
+<header
+  className="sc-gsDKAQ iqwsaS"
+>
+  <div
+    className="sc-dkPtRN blFfVK logo-brand"
+  >
+    <img
+      alt="apenet logo"
+      src="apenet-logo.png"
+    />
+  </div>
+  <div
+    className="header-cta"
+  >
+    <button
+      className="sc-bdvvtL clAnXq"
+      onClick={[Function]}
+    >
+      Disconnect Wallet
+    </button>
+  </div>
+</header>
+`;
+
+exports[`Storyshots Navigation/Header Logged Out 1`] = `
+<header
+  className="sc-gsDKAQ iqwsaS"
+>
+  <div
+    className="sc-dkPtRN blFfVK logo-brand"
+  >
+    <img
+      alt="apenet logo"
+      src="apenet-logo.png"
+    />
+  </div>
+  <div
+    className="header-cta"
+  >
+    <button
+      className="sc-bdvvtL dWhLfx"
+      onClick={[Function]}
+    >
+      Connect Wallet
+    </button>
+  </div>
+</header>
+`;
+
+exports[`Storyshots Pages/Landing Subscribed 1`] = `
+<div
+  className="sc-iCfMLu cqPtjx"
+>
+  <header
+    className="sc-gsDKAQ iqwsaS"
+  >
+    <div
+      className="sc-dkPtRN blFfVK logo-brand"
+    >
+      <img
+        alt="apenet logo"
+        src="apenet-logo.png"
+      />
+    </div>
+    <div
+      className="header-cta"
+    >
+      <button
+        className="sc-bdvvtL dWhLfx"
+        onClick={[Function]}
+      >
+        Connect Wallet
+      </button>
+    </div>
+  </header>
+  <div
+    className="sc-furwcr livhsK"
+  >
+    <main>
+      <h2>
+        Explore our ape metaverse and build your own virtual world
+      </h2>
+      <h5>
+        Join our community and get your own personalized ApenetNFT, nurture your Ape from baby to a monster king, join tournaments to win rewards and cryptoKings coins.
+      </h5>
+    </main>
+  </div>
+  <div
+    className="sc-eCImPb khPsoi"
+  >
+    <div
+      className="sc-gKclnd kobbnQ"
+    >
+      <h4>
+        Hello 
+        <span
+          className="user-name"
+        >
+          James
+          !
+        </span>
+      </h4>
+      <p>
+        Your invitation has been sent to 
+        <span
+          className="user-email"
+        >
+          james.bond@hey.com
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Pages/Landing Unsubscribed 1`] = `
+<div
+  className="sc-iCfMLu cqPtjx"
+>
+  <header
+    className="sc-gsDKAQ iqwsaS"
+  >
+    <div
+      className="sc-dkPtRN blFfVK logo-brand"
+    >
+      <img
+        alt="apenet logo"
+        src="apenet-logo.png"
+      />
+    </div>
+    <div
+      className="header-cta"
+    >
+      <button
+        className="sc-bdvvtL dWhLfx"
+        onClick={[Function]}
+      >
+        Connect Wallet
+      </button>
+    </div>
+  </header>
+  <div
+    className="sc-furwcr livhsK"
+  >
+    <main>
+      <h2>
+        Explore our ape metaverse and build your own virtual world
+      </h2>
+      <h5>
+        Join our community and get your own personalized ApenetNFT, nurture your Ape from baby to a monster king, join tournaments to win rewards and cryptoKings coins.
+      </h5>
+    </main>
+  </div>
+  <div
+    className="sc-eCImPb khPsoi"
+  >
+    <div
+      className="sc-jRQBWg ingaXa"
+    >
+      <input
+        className="sc-hKwDye dYeXrn"
+        name="first_name"
+        onChange={[Function]}
+        placeholder="your first name"
+        type="text"
+      />
+      <input
+        className="sc-hKwDye dYeXrn"
+        name="email"
+        onChange={[Function]}
+        placeholder="yourname@example.com"
+        type="text"
+      />
+      <button
+        className="sc-bdvvtL dWhLfx"
+        onClick={[Function]}
+      >
+        Send me Invite
+      </button>
+    </div>
+  </div>
+</div>
 `;

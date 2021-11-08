@@ -16,4 +16,8 @@ InputBox.propTypes = {
   onChange: PropTypes.func.isRequired,
 }
 
+InputBox.defaultProps = {
+  onChange: () => null,
+}
+
 export default InputBox

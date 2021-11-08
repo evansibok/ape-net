@@ -38,15 +38,15 @@ export const Header = ({ loggedIn, connecting, logInUser, logOutUser }) => {
 Header.propTypes = {
   connecting: PropTypes.bool.isRequired,
   loggedIn: PropTypes.bool.isRequired,
-  logInUser: PropTypes.func,
-  logOutUser: PropTypes.func,
+  logInUser: PropTypes.func.isRequired,
+  logOutUser: PropTypes.func.isRequired,
 }
 
 Header.defaultProps = {
   connecting: false,
   loggedIn: false,
-  logInUser: undefined,
-  logOutUser: undefined,
+  logInUser: () => null,
+  logOutUser: () => null,
 }
 
 export default Header
